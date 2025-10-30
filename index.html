@@ -1,144 +1,142 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
     body {
-        background: #f3c9e2;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+      background: #b2b6ff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
     .card {
-        width: 300px;
-        background: #f29bc0;
-        border-radius: 15px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        overflow: hidden;
-        color: #fff;
-        text-align: center;
+      width: 260px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to bottom, #e8e7f3 30%, #b86e9f 30%);
+      text-align: center;
+      color: #fff;
     }
 
     .card-header {
-        background: #ffe6f2;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      padding: 30px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .profile-letter {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        background: #ffb6d5;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 60px;
-        font-weight: bold;
-        border: 5px solid #fff5fa;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #f4a7d3;
+      color: white;
+      font-size: 55px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
 
     .card-body {
-        padding: 20px;
+      padding: 15px 20px 20px;
+      margin-top: 10px;
+    }
+
+    .card-body h3 {
+      margin: 5px 0;
+      font-size: 17px;
+      font-weight: 600;
     }
 
     .location {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        font-size: 13px;
-        color: #ffe0f1;
-        margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #fcdaf0;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 11px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      color: #fff;
     }
 
     .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin: 15px 0;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 15px;
     }
 
     .btn {
-        padding: 8px 18px;
-        border-radius: 6px;
-        border: none;
-        cursor: pointer;
-        font-size: 13px;
-        transition: 0.3s;
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: none;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
     .btn-message {
-        background: #fff;
-        color: #ff5ea2;
+      background: #fff;
+      color: #000;
     }
+
     .btn-follow {
-        background: #ff80bf;
-        color: #fff;
-        border: 1px solid #ff80bf;
+      background: #f17cc5;
+      color: #fff;
+      border: 1px solid #f17cc5;
     }
 
     .btn:hover {
-        transform: scale(1.05);
+      transform: scale(1.05);
     }
 
     .skills {
-        text-align: left;
-        font-size: 13px;
-        padding: 0 20px 15px;
+      text-align: left;
+      font-size: 11px;
+      color: #fff;
+    }
+
+    .skills strong {
+      display: block;
+      margin-bottom: 5px;
     }
 
     .skills span {
-        display: inline-block;
-        margin-right: 10px;
-        margin-top: 5px;
-        color: #ffffff;
-        background: rgba(255,255,255,0.15);
-        padding: 4px 8px;
-        border-radius: 4px;
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 4px;
     }
-</style>
+  </style>
 </head>
 <body>
 
-<div class="card">
+  <div class="card">
     <div class="card-header">
-        <div class="profile-letter">J</div>
+      <div class="profile-letter">JM</div>
     </div>
 
     <div class="card-body">
-        <h3>Jesie Marie Pagado</h3>
-        
-        <div class="location">
-            <span>📍</span> <p>Philippines</p>
-        </div>
+      <h3>Jesie Marie Pagado</h3>
 
-        <p style="font-size: 12px; color:#ffffff;">
-            Web Developer & Designer <br>
-            Student at STI West Negros University
-        </p>
+      <div class="location">
+        <span>📍</span><p>PHILIPPINES</p>
+      </div>
 
-        <div class="buttons">
-            <button class="btn btn-message">Message</button>
-            <button class="btn btn-follow">Follow</button>
-        </div>
-
-        <div class="skills">
-            <strong>SKILLS</strong> <br><br>
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            <span>UI/UX</span><span>React</span><span>Bootstrap</span>
-        </div>
-    </div>
-</div>
-
-</body>
-</html>
+      <p class="description">
+        UI/UX designer
