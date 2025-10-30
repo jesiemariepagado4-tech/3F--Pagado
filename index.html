@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .title {
+      color: gray;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0078d7;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #0056a6;
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
     <h1>Jesie Marie</h1>
+    <p class="title">Web Developer</p>
+    <p>Tech Enthusiast | Designer | Creator</p>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </div>
 </body>
 </html>
