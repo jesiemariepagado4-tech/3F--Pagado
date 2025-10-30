@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card </title>
+  <title>Profile Card</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f2f5;
+      background: #b2b6ff;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,65 +16,127 @@
     }
 
     .card {
-      background-color: #fff;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 260px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(to bottom, #e8e7f3 30%, #b86e9f 30%);
       text-align: center;
-      padding: 20px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: #fff;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    .card-header {
+      padding: 30px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .profile-img {
-      width: 120px;
-      height: 120px;
+    .profile-letter {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 24px;
-      color: #333;
-    }
-
-    .title {
-      color: gray;
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0078d7;
+      background: #f4a7d3;
+      color: white;
+      font-size: 55px;
       font-weight: bold;
-      transition: color 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: #0056a6;
+    .card-body {
+      padding: 15px 20px 20px;
+      margin-top: 10px;
+    }
+
+    .card-body h3 {
+      margin: 5px 0;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: #fcdaf0;
+      margin-bottom: 8px;
+    }
+
+    .description {
+      font-size: 11px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: none;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-message {
+      background: #fff;
+      color: #000;
+    }
+
+    .btn-follow {
+      background: #f17cc5;
+      color: #fff;
+      border: 1px solid #f17cc5;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .skills {
+      text-align: left;
+      font-size: 11px;
+      color: #fff;
+    }
+
+    .skills strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 4px;
     }
   </style>
 </head>
 <body>
+
   <div class="card">
-    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-    <h1>Jesie Marie</h1>
-    <p class="title">Web Developer</p>
-    <p>Tech Enthusiast | Designer | Creator</p>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-  </div>
-</body>
-</html>
+    <div class="card-header">
+      <div class="profile-letter">JM</div>
+    </div>
+
+    <div class="card-body">
+      <h3>Jesie Marie Pagado</h3>
+
+      <div class="location">
+        <span>📍</span><p>PHILIPPINES</p>
+      </div>
+
+      <p class="description">
+        UI/UX designer
